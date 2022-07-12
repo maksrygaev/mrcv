@@ -1,0 +1,26 @@
+.header {
+  div {
+    display: flex;
+  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex space-between;
+  position: sticky;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+  top: 0px;
+  padding: 6px 10px;
+  box-shadow: 1px 3px 10px 1px rgba(88, 88, 88, 0.53);
+  &__logo {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid black;
+    font-family: Kinetika;
+    @media (min-width: 768px) {
+      padding: 4px;
+    }
+  }
+}

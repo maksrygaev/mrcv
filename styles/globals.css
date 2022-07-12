@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Trispace:wght@100&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./markdown.css";
+
+@font-face {
+  font-family: "Calvino";
+  font-style: bold;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../public/fonts/Calvino-bold.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Lion";
+  font-style: bold;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../public/fonts/Lion-Bold.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Kinetika";
+  font-style: bold;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../public/fonts/Kinetika-Bold.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Romestone";
+  font-style: bold;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../public/fonts/Romestone.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Fontspring";
+  font-style: bold;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../public/fonts/Fontspring-bold.otf") format("woff2");
+}
+
+* {
+  font-family: "Trispace";
+}
+
+section {
+  padding: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(110, 110, 110);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(79, 78, 78);
+}
+
+.title {
+  overflow: hidden;
+  text-align: center;
+}
+.title h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.title:before,
+.title:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 0.1px;
+  background-color: #ffffff;
+  position: relative;
+}
+.title:before {
+  margin-left: -100%;
+  left: -14px;
+}
+.title:after {
+
+  margin-right: -100%;
+  right: -14px;
+}
